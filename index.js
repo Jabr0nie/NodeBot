@@ -74,7 +74,7 @@ setInterval(() => {
 
 const express = require('express');
 const app = express();
-const port = 3000; // Change to your preferred port
+const port = 8080; // Change to your preferred port
 
 // Health check endpoint
 app.get('/health', (req, res) => {
