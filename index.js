@@ -71,3 +71,21 @@ checkFarmStatus();
 setInterval(() => {
     checkFarmStatus();
 }, 2000);
+
+const express = require('express');
+const app = express();
+const port = 3000; // Change to your preferred port
+
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).send('Healthy');
+});
+
+// Your existing routes and logic
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
+});
