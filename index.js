@@ -9,8 +9,9 @@ const privateKey = `${config.privateKey}`;
 
 // Define the bot addresses
 const BOTAddress1 = "0x936f9e5454C0D95fD6AF0A61C33c70DB36bc78b3";
+const aUSDCOOK = "0xF3C9C0A0C797Da62047dD377ab27d6E62d4adf18";
 // Create an array of bot addresses
-const BOTAddress = [BOTAddress1];
+const BOTAddress = [BOTAddress1, aUSDCOOK];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
