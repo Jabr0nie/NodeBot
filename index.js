@@ -8,10 +8,10 @@ const _from = "0xDf4023c082F6E1562fb228D7b961D97aF8708d4c";
 const privateKey = `${config.privateKey}`;
 
 // Define the bot addresses
-const BOTAddress1 = "0x936f9e5454C0D95fD6AF0A61C33c70DB36bc78b3";
+const USDTWMNT = "0xeF75d1163FfF98Fe49076658b7171630e73C325d";
 const aUSDCOOK = "0xF3C9C0A0C797Da62047dD377ab27d6E62d4adf18";
 // Create an array of bot addresses
-const BOTAddress = [BOTAddress1, aUSDCOOK];
+const BOTAddress = [USDTWMNT, aUSDCOOK];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -71,7 +71,7 @@ checkFarmStatus();
 // Set an interval to call checkFarmStatus every X milliseconds (e.g., 30 seconds)
 setInterval(() => {
     checkFarmStatus();
-}, 5000000);
+}, 15000);
 
 const express = require('express');
 const app = express();
