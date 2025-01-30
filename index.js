@@ -11,7 +11,7 @@ const privateKey = `${config.privateKey}`;
 const USDTWMNT = "0xeF75d1163FfF98Fe49076658b7171630e73C325d";
 const aUSDCOOK = "0xF3C9C0A0C797Da62047dD377ab27d6E62d4adf18";
 // Create an array of bot addresses
-const BOTAddress = [USDTWMNT, aUSDCOOK];
+const BOTAddress = [USDTWMNT];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
