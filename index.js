@@ -38,7 +38,7 @@ async function checkFarmStatus() {
                 const tx = {
                     from: _from,
                     to: BOTAddress[i],
-                    gas: '5000000000',  // Use the estimated gas here
+                    gas: '11,848,960,664',  // Use the estimated gas here
                     data: BOT.methods.rebalance().encodeABI(),
                     maxPriorityFeePerGas: '20000000',
                     maxFeePerGas: '20000000'
