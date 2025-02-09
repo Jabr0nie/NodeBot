@@ -7,11 +7,11 @@ const web3 = new Web3(`https://mantle-mainnet.infura.io/v3/${config.infuraProjec
 const _from = "0xDf4023c082F6E1562fb228D7b961D97aF8708d4c";
 const privateKey = `${config.privateKey}`;
 
-// Define the bot addresses
+// Define the bot addresses (Controller - not actual SC)
 const WETHMETH = "0xABc52832315E6cFbD2a8fC2A491dd830858A1190";
-const aUSDCOOK = "0xF3C9C0A0C797Da62047dD377ab27d6E62d4adf18";
+const WMNTMETH = "0x0ceCe3b3008C877D5351713fBa395674f5F5C590";
 // Create an array of bot addresses
-const BOTAddress = [WETHMETH];
+const BOTAddress = [WETHMETH, WMNTMETH];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -52,18 +52,19 @@ async function checkFarmStatus() {
                 const receipt = await web3.eth.sendSignedTransaction(signature.rawTransaction);
                 console.log('Rebalance transaction successful. Receipt:', receipt);
 
-                // Delay for 15 seconds before proceeding to the next farm
-                isRunning = false;
+          
+              
             }
         }catch (error) {
             console.error('Error occurred during transaction:', error.message);
             if (error.message.includes('execution reverted')) {
                 console.error('Transaction reverted. It could be due to contract logic or state conditions.');
             }
-            isRunning = false;
+
         }
-        isRunning = false;
-    }};
+    }
+    isRunning = false;
+};
 
 checkFarmStatus();
 
