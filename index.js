@@ -11,7 +11,7 @@ const privateKey = `${config.privateKey}`;
 const WETHMETH = "0xABc52832315E6cFbD2a8fC2A491dd830858A1190";
 const WMNTMETH = "0x0ceCe3b3008C877D5351713fBa395674f5F5C590";
 // Create an array of bot addresses
-const BOTAddress = [WETHMETH, WMNTMETH];
+const BOTAddress = [WMNTMETH];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -72,7 +72,7 @@ checkFarmStatus();
 // Set an interval to call checkFarmStatus every X milliseconds (e.g., 30 seconds)
 setInterval(() => {
     checkFarmStatus();
-}, 30000);
+}, 3000);
 
 const express = require('express');
 const app = express();
