@@ -9,8 +9,8 @@ const privateKey = `${config.privateKey}`;
 
 // Define the bot addresses (Controller - not actual SC)
 const WETHMETH = "0xABc52832315E6cFbD2a8fC2A491dd830858A1190";
-const WMNTMETH = "0xcC2ff62feeCe008bdCd3A2e00c63B12e8A7c9A85";
-//0xcC2ff62feeCe008bdCd3A2e00c63B12e8A7c9A85 - autocompound
+const WMNTMETH = "0x3D8E87a9bA73B060d48daF837Fe8bc5Efd1E8F61";
+//0x3D8E87a9bA73B060d48daF837Fe8bc5Efd1E8F61 - autocompound
 //0x0ceCe3b3008C877D5351713fBa395674f5F5C590 - Sends to admin
 // Create an array of bot addresses
 const BOTAddress = [WMNTMETH];
