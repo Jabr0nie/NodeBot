@@ -16,7 +16,7 @@ const WMNTUSDT = "0xc90Bd913122bD8b2E9bEaf1628CC7d73c7CD79b4";
 //0xc90Bd913122bD8b2E9bEaf1628CC7d73c7CD79b4 - autocompound 50% send 50% to admin
 
 // Create an array of bot addresses
-const BOTAddress = [WMNTUSDT];
+const BOTAddress = [WMNTMETH];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
