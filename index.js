@@ -18,7 +18,7 @@ const JOEWMNT = "0x97A0701A44e5311f5A5D781e04036987A9D93e72";
 //0x97A0701A44e5311f5A5D781e04036987A9D93e72 - autocompound - custom percent
 
 // Create an array of bot addresses
-const BOTAddress = [WMNTMETH];
+const BOTAddress = [WMNTMETH, JOEWMNT];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
