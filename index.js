@@ -16,9 +16,11 @@ const WMNTUSDT = "0xc90Bd913122bD8b2E9bEaf1628CC7d73c7CD79b4";
 //0xc90Bd913122bD8b2E9bEaf1628CC7d73c7CD79b4 - autocompound 50% send 50% to admin
 const JOEWMNT = "0x97A0701A44e5311f5A5D781e04036987A9D93e72";
 //0x97A0701A44e5311f5A5D781e04036987A9D93e72 - autocompound - custom percent
+const AUSDWMNT = "0xCcCfCfCDF1d5CBd1efba3729e5cCcCf150281Dc1";
+//0xCcCfCfCDF1d5CBd1efba3729e5cCcCf150281Dc1 - autocompound - custom percent
 
 // Create an array of bot addresses
-const BOTAddress = [WMNTMETH, JOEWMNT];
+const BOTAddress = [WMNTMETH, JOEWMNT, AUSDWMNT];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
