@@ -18,9 +18,11 @@ const JOEWMNT = "0x97A0701A44e5311f5A5D781e04036987A9D93e72";
 //0x97A0701A44e5311f5A5D781e04036987A9D93e72 - autocompound - custom percent
 const AUSDWMNT = "0xCcCfCfCDF1d5CBd1efba3729e5cCcCf150281Dc1";
 //0xCcCfCfCDF1d5CBd1efba3729e5cCcCf150281Dc1 - autocompound - custom percent
+const INTXUSDT = "0x7167F93c317F693d0AaE98D0F80ABA215e5267a7";
+//0x7167F93c317F693d0AaE98D0F80ABA215e5267a7 - autocompound - custom percent
 
 // Create an array of bot addresses
-const BOTAddress = [WMNTMETH, JOEWMNT, AUSDWMNT];
+const BOTAddress = [WMNTMETH, JOEWMNT, AUSDWMNT, INTXUSDT];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
