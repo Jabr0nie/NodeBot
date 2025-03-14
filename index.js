@@ -22,7 +22,7 @@ const INTXUSDT = "0x7167F93c317F693d0AaE98D0F80ABA215e5267a7";
 //0x7167F93c317F693d0AaE98D0F80ABA215e5267a7 - autocompound - custom percent
 
 // Create an array of bot addresses
-const BOTAddress = [WMNTMETH, JOEWMNT, AUSDWMNT, INTXUSDT];
+const BOTAddress = [WMNTMETH, JOEWMNT, INTXUSDT];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
