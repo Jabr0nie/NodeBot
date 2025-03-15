@@ -20,9 +20,11 @@ const AUSDWMNT = "0xCcCfCfCDF1d5CBd1efba3729e5cCcCf150281Dc1";
 //0xF3e4D86f43fB25B5792be7718d84785A94e9302F - autocompound - custom percent
 const INTXUSDT = "0x7167F93c317F693d0AaE98D0F80ABA215e5267a7";
 //0x7167F93c317F693d0AaE98D0F80ABA215e5267a7 - autocompound - custom percent
+const COOKWMNT = "0x45581E4097a9Be0BAc2CDFB1de286f97b00e6211";
+//0x45581E4097a9Be0BAc2CDFB1de286f97b00e6211 - autocompound - custom percent
 
 // Create an array of bot addresses
-const BOTAddress = [WMNTMETH, INTXUSDT, AUSDWMNT];
+const BOTAddress = [WMNTMETH, INTXUSDT, AUSDWMNT, COOKWMNT];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -83,7 +85,7 @@ checkFarmStatus();
 // Set an interval to call checkFarmStatus every X milliseconds (e.g., 30 seconds)
 setInterval(() => {
     checkFarmStatus();
-}, 3000);
+}, 5000);
 
 const express = require('express');
 const app = express();
