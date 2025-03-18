@@ -24,7 +24,7 @@ const COOKWMNT = "0x45581E4097a9Be0BAc2CDFB1de286f97b00e6211";
 //0x45581E4097a9Be0BAc2CDFB1de286f97b00e6211 - autocompound - custom percent
 
 // Create an array of bot addresses
-const BOTAddress = [WMNTMETH, INTXUSDT, AUSDWMNT];
+const BOTAddress = [WMNTMETH, AUSDWMNT];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
