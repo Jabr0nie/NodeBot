@@ -12,8 +12,8 @@ const WETHMETH = "0xABc52832315E6cFbD2a8fC2A491dd830858A1190";
 const WMNTMETH = "0xa92daeD32FFB7D93b85f8B689ab540CcC2148D95";
 //0xa92daeD32FFB7D93b85f8B689ab540CcC2148D95 - autocompound - custom percent
 //0x0ceCe3b3008C877D5351713fBa395674f5F5C590 - Sends to admin
-const WMNTUSDT = "0xc90Bd913122bD8b2E9bEaf1628CC7d73c7CD79b4";
-//0xc90Bd913122bD8b2E9bEaf1628CC7d73c7CD79b4 - autocompound 50% send 50% to admin
+const WMNTUSDT = "0x42738fe767EBAE1FF3F10E1bFB480433385d1C78";
+//0x42738fe767EBAE1FF3F10E1bFB480433385d1C78 - autocompound 50% send 50% to admin
 const JOEWMNT = "0x97A0701A44e5311f5A5D781e04036987A9D93e72";
 //0x97A0701A44e5311f5A5D781e04036987A9D93e72 - autocompound - custom percent
 const AUSDWMNT = "0x8062F0c0Ebe5C28321C03440A83ef4107c2686B4";
@@ -25,7 +25,7 @@ const COOKWMNT = "0x45581E4097a9Be0BAc2CDFB1de286f97b00e6211";
 //0x45581E4097a9Be0BAc2CDFB1de286f97b00e6211 - autocompound - custom percent
 
 // Create an array of bot addresses
-const BOTAddress = [WMNTMETH, AUSDWMNT];
+const BOTAddress = [WMNTMETH, WMNTUSDT];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
