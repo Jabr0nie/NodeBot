@@ -86,7 +86,7 @@ checkFarmStatus();
 // Set an interval to call checkFarmStatus every X milliseconds (e.g., 30 seconds)
 setInterval(() => {
     checkFarmStatus();
-}, 60000);
+}, 1000);
 
 const express = require('express');
 const app = express();
