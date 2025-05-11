@@ -8,7 +8,7 @@ const _from = "0xDf4023c082F6E1562fb228D7b961D97aF8708d4c";
 const privateKey = `${config.privateKey}`;
 
 // Define the bot addresses (Controller - not actual SC)
-//const USDCVELO = "0x9b44dFc310bA41b2f4729343353CDc3695E1Ffa8";
+const USDCVELO = "0x9b44dFc310bA41b2f4729343353CDc3695E1Ffa8";
 
 
 // Create an array of bot addresses
