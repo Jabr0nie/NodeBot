@@ -9,10 +9,10 @@ const privateKey = `${config.privateKey}`;
 
 // Define the bot addresses (Controller - not actual SC)
 const USDCVELO600 = "0x3Ace6247dd87d214C2059988169a5d47C6E1ad7c";
-const USDCopxVELO200 = "0x2fBD2D9a0500758F72803DD815e5D0342Fe34A99";
+const USDCopxVELO = "0x512AE8073E5e3398a47d2b6FDc38C63d89a1E009";
 
 // Create an array of bot addresses
-const BOTAddress = [USDCVELO600];
+const BOTAddress = [USDCopxVELO];
 
 let isRunning = false;  // Flag to track if the function is currently running
 const delay = ms => new Promise(res => setTimeout(res, ms));
